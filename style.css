@@ -1,0 +1,46 @@
+*{
+    background-color: dimgrey;
+}
+
+
+div {
+    background-color: rgb(54, 58, 59);
+    border: 1px solid darkgray;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: [main-start] 1fr [content-start] 1fr [content-end] 1fr [main-end];
+    grid-template-rows: [main-start] 100px [content-start] 100px [content-end] 100px [main-end];
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    color: white;
+    padding: 10px;
+}
+
+.box1 {
+    grid-column-start: main-start;
+    grid-row-start: main-start;
+    grid-row-end: main-end;
+}
+
+.box2 {
+    grid-column-start: content-end;
+    grid-row-start: main-start;
+    grid-row-end: content-end;
+}
+
+.box3 {
+    grid-column-start: content-start;
+    grid-row-start: main-start;
+    }
+
+.box4 {
+    grid-column-start: content-start;
+    grid-row-start: main-end;
+    grid-row-end: content-end;
+}
+
+.thing {
+    grid-area: content;
+}
